@@ -5,21 +5,29 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "generate": "faust generatePossibleTypes", 
     "start": "next start",
-    "lint": "next lint"
+    "clean": "rimraf .next node_modules",
+    "lint": "next lint",
+    "generate": "gqty generate",
+    "wpe-build": "next build"
   },
   "dependencies": {
-    "@apollo/client": "^3.13.8",
-    "@faustwp/cli": "^3.2.3",
-    "@faustwp/core": "^3.2.3",
-    "graphql": "^16.11.0",
-    "next": "15.4.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "@faustjs/core": "^0.12.3",
+    "@faustjs/next": "^0.12.3",
+    "next": "^11.1.2",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "@gqty/cli": "^2.1.0",
+    "@types/react": "^17.0.24",
+    "dotenv": "^10.0.0",
+    "dotenv-flow": "3.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
   }
 }
